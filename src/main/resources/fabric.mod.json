@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "lexical-portals",
+	"version": "${version}",
+	"name": "lexical portals",
+	"description": "portalling with books",
+	"authors": [
+		"Entity0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lexical-portals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.entity0.portal.LexicalPortals"
+		],
+		"client": [
+			"net.entity0.portal.LexicalPortalsClient"
+		],
+		"fabric-datagen": [
+          "net.entity0.portal.LexicalPortalsDataGenerator"
+		]
+	},
+	"mixins": [
+		"lexical-portals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"imm_ptl_core": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
